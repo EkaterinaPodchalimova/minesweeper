@@ -2,7 +2,7 @@ const fields = document.querySelector('.military-fields');
 const fieldTemplate = document.querySelector('#element-template').content;
 const fieldsMassive = [];
 
-function createField(a) {
+function createField() {
     const fieldElement = fieldTemplate.querySelector('.military-field').cloneNode(true);
     fieldElement.classList.add('military-field_default');
     fieldElement.addEventListener('contextmenu',(event) => {
@@ -11,19 +11,19 @@ function createField(a) {
     return fieldElement;
 }
 
-function createMassive_9_9(a) {
-    for (let i = 0; i <= 8; i += 1) {
+function createMassive(a,b,c) {
+    for (let i = 0; i <= b; i += 1) {
         fieldsMassive[i] = [];
-        for (let j = 0; j <= 8; j += 1) {
-            fieldsMassive[i][j] = createField(a);
+        for (let j = 0; j <= c; j += 1) {
+            fieldsMassive[i][j] = createField();
         }
     }
-    const result = [].concat(fieldsMassive[0],fieldsMassive[1],fieldsMassive[2],fieldsMassive[3],fieldsMassive[4],fieldsMassive[5],fieldsMassive[6],fieldsMassive[7],fieldsMassive[8]);
+    const result = [].concat(...fieldsMassive);
     return result;
 }
 
 function createFields() {
-    const field = createMassive_9_9(fieldImages);
+    const field = createMassive(fieldImages,8,8);
     field.forEach(function(el) {
         fields.append(el);
     })

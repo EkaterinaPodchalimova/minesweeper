@@ -24,7 +24,3 @@
 .header__item:active {
     transform: scale(1.05);
 }
-
-.header__item:hover .header__list_inner {
-    opacity: 1;
-}

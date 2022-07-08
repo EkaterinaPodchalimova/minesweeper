@@ -14,16 +14,16 @@
         <!-- Навигация по игре -->
         <section class="header__top">
             <nav class="header__nav">
-                <ul class="header__list header__list_main">
-                    <li class="header__item">Новая игра</li>
-                    <li class="header__item">Уровень
-                        <ul class="header__list header__list_inner">
-                            <li class="header__inner-item">Новичок</li>
-                            <li class="header__inner-item">Любитель</li>
-                            <li class="header__inner-item">Профессионал</li>
+                <ul class="header__list header__main-list">
+                    <li class="header__item" tabindex="0">Новая игра</li>
+                    <li class="header__item level" tabindex="0">Уровень
+                        <ul class="header__list header__inner-list">
+                            <li class="header__inner-item level__beginner" tabindex="0">Новичок</li>
+                            <li class="header__inner-item level__amateur" tabindex="0">Любитель</li>
+                            <li class="header__inner-item level__professional" tabindex="0">Профессионал</li>
                         </ul>
                     </li>
-                    <li class="header__item">Справка</li>
+                    <li class="header__item" tabindex="0">Справка</li>
                 </ul>
             </nav>
         </section>
@@ -60,6 +60,7 @@
 </template>
 <footer class="footer">
 </footer>
+<script src="./scripts/menu.js"></script>
 <script src="./scripts/military-field.js"></script>
 <script src="./scripts/military-fields.js"></script>
 </body>

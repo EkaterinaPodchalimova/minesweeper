@@ -1,0 +1,4 @@
+.military-field_flag {
+    background-image: url(../../../images/Property_Flag.svg);
+    z-index: 2;
+}

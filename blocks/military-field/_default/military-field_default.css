@@ -1,0 +1,20 @@
+.military-field_default {
+    background-image: url(../../../images/Property_Default.svg);
+    position: relative;
+}
+
+.military-field_default:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #2a2c2f;
+}
+
+.military-field_default:hover:before {
+    opacity: 0.2;
+}

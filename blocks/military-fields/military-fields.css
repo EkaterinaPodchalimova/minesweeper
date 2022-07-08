@@ -1,0 +1,9 @@
+.military-fields {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    gap: 0 0;
+}

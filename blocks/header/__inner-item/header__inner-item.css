@@ -1,0 +1,19 @@
+.header__inner-item {
+    font-family: Bradley Hand, cursive;
+    padding: 20px 30px;
+    background-color: #bfbfbf;
+    border-bottom: 7px solid #6f7070;
+    border-right: 7px solid #6f7070;    
+    transition: opacity 0.3s ease;  
+    margin-bottom: 5px;
+    z-index: 2;
+    /* transition: transform 0.3s ease; */
+}
+
+.header__inner-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.header__inner-item:hover {
+    transform: scale(1.02);
+}

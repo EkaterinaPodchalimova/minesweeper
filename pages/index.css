@@ -7,3 +7,14 @@
 @import url(../blocks/military-field/_default/military-field_default.css);
 @import url(../blocks/military-field/_flag/military-field_flag.css);
 @import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__list/header__list.css);
+@import url(../blocks/header/__main-list/header__main-list.css);
+@import url(../blocks/header/__inner-list/header__inner-list.css);
+@import url(../blocks/header/__item/header__item.css);
+@import url(../blocks/header/__inner-item/header__inner-item.css);
+@import url(../blocks/header/__bottom/header__bottom.css);
+@import url(../blocks/counter/counter.css);
+@import url(../blocks/counter/__image/counter__image.css);
+@import url(../blocks/counter/_type/counter_type_minecount.css);
+@import url(../blocks/counter/_type/counter_type_timer.css);
+@import url(../blocks/level/_opened/level_opened.css);

@@ -11,12 +11,46 @@
 <div class="page">
     <header class="header">
         <h1 class="header__title">Привет, сыграй в нашу версию Сапёра</h1>
+        <!-- Навигация по игре -->
+        <section class="header__top">
+            <nav class="header__nav">
+                <ul class="header__list header__main-list">
+                    <li class="header__item" tabindex="0">Новая игра</li>
+                    <li class="header__item level" tabindex="0">Уровень
+                        <ul class="header__list header__inner-list">
+                            <li class="header__inner-item level__beginner" tabindex="0">Новичок</li>
+                            <li class="header__inner-item level__amateur" tabindex="0">Любитель</li>
+                            <li class="header__inner-item level__professional" tabindex="0">Профессионал</li>
+                        </ul>
+                    </li>
+                    <li class="header__item" tabindex="0">Справка</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header__bottom">
+            <!-- Счетчик количества оставшихся мин -->
+            <div class="header__counter counter counter_type_minecount">
+                <img src="./images/0.png" alt="0" class="counter__image">
+                <img src="./images/0.png" alt="0" class="counter__image">
+                <img src="./images/0.png" alt="0" class="counter__image">
+            </div>
+            <!-- Статус пользователя. Модификаторы: 
+                header__status_type_play - игрок играет
+                header__status_type_win - игрок выиграл
+                header__status_type_lose - игрок проиграл
+            -->
+            <div class="header__status header__status_type_play">
+                <img src="./images/grinning-cat-face-svgrepo-com.svg" alt="Улыбающийся котик" title="У вас всё хорошо получается!" class="header__user-icon">
+            </div>
+            <!-- Счетчик времени с начала игры -->
+            <div class="header__counter counter counter_type_timer">
+                <img src="./images/0.png" alt="0" class="counter__image">
+                <img src="./images/0.png" alt="0" class="counter__image">
+                <img src="./images/0.png" alt="0" class="counter__image">
+            </div>
+        </section>
     </header>
     <div class="main-block">
-        <section class="field_top">
-        </section>
-        <section class="field_bottom">
-        </section>
         <section class="military-fields">
         </section>
     </div>
@@ -26,6 +60,7 @@
 </template>
 <footer class="footer">
 </footer>
+<script src="./scripts/menu.js"></script>
 <script src="./scripts/military-field.js"></script>
 <script src="./scripts/military-fields.js"></script>
 </body>

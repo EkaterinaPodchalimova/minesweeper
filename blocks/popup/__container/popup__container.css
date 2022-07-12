@@ -1,0 +1,13 @@
+.popup__container {
+    position: relative;
+    width: 50%;
+    min-height: 50vh;
+    background-color: #f6f6f6;
+    background-image: url(../../../images/png-transparent-explosion-flame-bomb-explosion-sparks-fire-smoke-text-photography-monochrome.png);
+    background-repeat: no-repeat;
+    background-position: top -100px right -200px;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

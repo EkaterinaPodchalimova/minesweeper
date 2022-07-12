@@ -23,7 +23,7 @@
                             <li class="header__inner-item level__professional" tabindex="0">Профессионал</li>
                         </ul>
                     </li>
-                    <li class="header__item" tabindex="0">Справка</li>
+                    <li class="header__item rules" tabindex="0">Справка</li>
                 </ul>
             </nav>
         </section>
@@ -58,10 +58,27 @@
 <template id="element-template">
     <div class="military-field"></div>
 </template>
+
+<div class="popup popup_type_rules">
+    <div class="popup__container">
+        <h2 class="popup__title">Правила игры в сапер</h2>
+        <p class="popup__text">
+            «Сапер» – это несложная игра, развивающая внимание, память и логику. Цель – открыть все ячейки на поле так, чтобы не “взорвать” ни одну мину. Для поиска взрывоопасных квадратиков можно использовать подсказки:
+            
+            Числа в ячейках показывают количество мин, скрытых в восьми находящихся рядом ячейках.
+            Если возле открытой ячейки есть пустые клеточки, они откроются автоматически.
+            Если вы понимаете, что в какой-то клеточке скрывается бомба, пометьте ее флажком.
+            Когда вы откроете ячейку с миной, игра заканчивается проигрышем.
+            Для победы в игре нужно открыть все ячейки на поле, пометив все клеточки с бомбой флажком.
+        </p>
+        <button type="button" class="popup__close" aria-label="Закрыть"></button>        
+    </div>     
+</div>
 <footer class="footer">
 </footer>
 <script src="./scripts/menu.js"></script>
 <script src="./scripts/military-field.js"></script>
 <script src="./scripts/military-fields.js"></script>
+<script src="./scripts/popup.js"></script>
 </body>
 </html>

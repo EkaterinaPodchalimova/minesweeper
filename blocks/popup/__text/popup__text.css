@@ -1,0 +1,7 @@
+.popup__text {
+    font-family: Bradley Hand, cursive;
+    font-size: 20px;
+    text-shadow: #f5f5f5 1px 0 10px;
+    align-self: center;
+    margin: 0;
+}
